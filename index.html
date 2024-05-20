@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gorillaz</title>
+    <!-- Vinculamos el archivo CSS para estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <!-- Navegación del sitio web con enlaces a las secciones -->
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#biografia">Biografía</a></li>
+                <li><a href="#musica">Música</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Sección de inicio -->
+    <section id="inicio">
+        <h1>Bienvenidos al sitio oficial de Gorillaz</h1>
+        <p>Descubre la música y la historia de este grupo.</p>
+        <!-- Imagen de la cantante -->
+        <img src="ruta/a/tu/imagen.jpg" alt="Cantante" class="main-img">
+    </section>
+    
+    <!-- Sección de biografía -->
+    <section id="biografia">
+        <h2>Biografía</h2>
+        <p>La banda fue creada por Damon Albarn, líder de la banda de pop británico Blur , y Jamie Hewlett, cocreador de la serie de cómics Tank Girl . Su estilo es conocido por su variedad y combinación de géneros, con influencias de muchos tipos diferentes de música, pero sobre todo del hip-hop, dub-reggae, electro y pop. Más recientemente, también han obtenido influencias del R&B, el soul y la música house de Chicago.
+
+            Gorillaz, a diferencia de otras bandas ficticias, no fueron creados como una parodia de un género particular (GWAR, Dethklok), ni comercializados para niños pequeños (Alvin and The Chipmunks), ni representaciones de las personas detrás de la banda (Prozzak), ni creados para televisión ( The Archies, Josie and The Pussycats, Dr. Teeth y The Electric Mayhem). En cambio, Gorillaz se creó originalmente para ser explorado a través de Internet (un nuevo medio en ese momento) y estaba destinado a una audiencia mayor que las bandas de dibujos animados anteriores, mientras que la calidad de su producción musical real generalmente era más atractiva para sus fans que su existencia como personajes de dibujos animados. Las bandas que influyen en su música van desde Massive Attack y The Specials , hasta De La Soul y A Tribe Called Quest, pasando por Daft Punk y Beck , mientras que visualmente se inspiran en Hanna Barbera, Looney Tunes, Mad Magazine, Heavy Metal, 2000 AD. y muchas películas clásicas de terror y cyberpunk. Han dicho que Los Simpson fueron una gran influencia en Gorillaz por “la forma en que invaden la cultura popular y comentan sobre ella de una manera bastante orgánica”. Hoy, Albarn dice que Gorillaz se desarrolló a partir de “una obsesión muy morbosa con el fin del mundo”.</p>
+        <!-- Añadir más detalles sobre la biografía -->
+        <p> Damon Albarn criado en Leytonstone , al este de Londres , y alrededor de Colchester, Essex , Albarn asistió a la Escuela Stanway , donde conoció al guitarrista Graham Coxon , con quien más tarde formaría Blur. Lanzaron su álbum debut Leisure en 1991. Después de pasar largos períodos de gira por Estados Unidos, la composición de Albarn se vio cada vez más influenciada por bandas británicas de la década de 1960. El resultado fueron los álbumes de Blur Modern Life Is Rubbish (1993), Parklife (1994) y The Great Escape (1995). Los tres recibieron elogios de la crítica, mientras que Blur ganó popularidad masiva en el Reino Unido, ayudado por una rivalidad en las listas de pop británico con Oasis . Álbumes que encabezaron las listas como Blur (1997), 13 (1999) y Think Tank (2003) incorporaron influencias de lo-fi , art rock , electrónica y música mundial . A estos les siguieron The Magic Whip (2015), el primer álbum de estudio de Blur en 12 años, y The Ballad of Darren en 2023.</p>
+        <!-- Imagen de la cantante en un evento o actuación -->
+        <img src="ruta/a/tu/imagen2.jpg" alt="Cantante en concierto" class="bio-img">
+    </section>
+    
+    <!-- Sección de música -->
+    <section id="musica">
+        <h2>Música</h2>
+        <p>Escucha las últimas canciones de Gorillaz.</p>
+        <!-- Reproductor de audio con varias canciones -->
+        <audio controls>
+            <source src="ruta/a/tu/cancion1.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+        <audio controls>
+            <source src="ruta/a/tu/cancion2.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+        <audio controls>
+            <source src="ruta/a/tu/cancion3.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </section>
+    
+    <!-- Sección de galería -->
+    <section id="galeria">
+        <h2>Galería</h2>
+        <p>Algunas fotos destacadas de [Nombre de la Cantante].</p>
+        <div class="gallery">
+            <img src="ruta/a/tu/imagen3.jpg" alt="Foto 1" class="gallery-img">
+            <img src="ruta/a/tu/imagen4.jpg" alt="Foto 2" class="gallery-img">
+            <img src="ruta/a/tu/imagen5.jpg" alt="Foto 3" class="gallery-img">
+        </div>
+    </section>
+    
+    <!-- Sección de contacto con formulario -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="contactForm">
+            <!-- Campo de entrada para nombre -->
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <!-- Campo de entrada para correo electrónico -->
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <!-- Campo de entrada para asunto -->
+            <label for="subject">Asunto:</label>
+            <input type="text" id="subject" name="subject" required>
+            
+            <!-- Campo de entrada para mensaje -->
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <!-- Campo de selección para preferencia de contacto -->
+            <label for="contactMethod">Preferencia de contacto:</label>
+            <select id="contactMethod" name="contactMethod" required>
+                <option value="email">Correo Electrónico</option>
+                <option value="phone">Teléfono</option>
+            </select>
+            
+            <!-- Checkbox para suscribirse al boletín -->
+            <label for="newsletter">
+                <input type="checkbox" id="newsletter" name="newsletter"> Suscribirse al boletín
+            </label>
+            
+            <!-- Botón de envío del formulario -->
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <!-- Pie de página del sitio web -->
+        <p>&copy; 2024 Gorillaz. Todos los derechos reservados.</p>
+    </footer>
+    
+    <!-- Vinculamos el archivo JavaScript para validación de formularios -->
+    <script src="script.js"></script>
+</body>
+</html>
